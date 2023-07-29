@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+      
+<h:head>
+	<title>Buscar Itens</title>
+</h:head>
+
+<h:body>
+
+	<a href="../index.xhtml">Home</a>
+	<br />
+	<br />
+
+	<h:form>
+		<h:outputLabel value="Buscar itens" />
+		<hr />
+
+		<h:outputLabel value="Codigo: " />
+		<h:inputText value="#{itensMB.codigo}"></h:inputText>
+		<br />
+
+		<h:commandButton action="#{itensMB.lerItem}" value="buscar" />
+		<br />
+
+		<h:outputLabel value="Codigo: " />
+		<h:outputText value="#{itensMB.codigo}" />
+		<br />
+
+		<h:outputLabel value="Descrição: " />
+		<h:outputText value="#{itensMB.descricao}" />
+		<br />
+
+		<h:outputLabel value="Codigo: " />
+		<h:outputText value="#{itensMB.unidade}" />
+		<br />
+
+	</h:form>
+
+</h:body>
+</html>

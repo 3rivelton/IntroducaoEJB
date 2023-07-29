@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Alterar Usuario</title>
+</h:head>
+
+<h:body>
+
+	<a href="../index.xhtml">Home</a>
+	<br />
+	<br />
+
+	<h:form>
+		<h:outputLabel value="Alterar Usuario" />
+		<hr />
+
+		<h:outputLabel value="Codigo: " />
+		<h:inputText value="#{usuarioMB.codigo}"></h:inputText>
+		<br />
+
+		<h:outputLabel value="Nome: " />
+		<h:inputText value="#{usuarioMB.nome}"></h:inputText>
+		<br />
+
+		<h:outputLabel value="CPF: " />
+		<h:inputText value="#{usuarioMB.cpf}"></h:inputText>
+		<br />
+
+		<h:outputLabel value="Senha: " />
+		<h:inputText value="#{usuarioMB.senha}"></h:inputText>
+		<br />
+
+		<h:commandButton action="#{usuarioMB.alterarUsuario}" value="alterar" />
+		<br />
+
+	</h:form>
+
+</h:body>
+</html>

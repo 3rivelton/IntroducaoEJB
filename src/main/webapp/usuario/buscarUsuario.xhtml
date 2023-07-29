@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Buscar Usuario</title>
+</h:head>
+
+<h:body>
+
+	<a href="../index.xhtml">Home</a>
+	<br />
+	<br />
+
+	<h:form>
+		<h:outputLabel value="Buscar usuario" />
+		<hr />
+
+		<h:outputLabel value="Codigo: " />
+		<h:inputText value="#{usuarioMB.codigo}"></h:inputText>
+		<br />
+
+		<h:commandButton action="#{usuarioMB.lerUsuario}" value="buscar" />
+		<br />
+
+		<h:outputLabel value="Codigo: " />
+		<h:outputText value="#{usuarioMB.codigo}" />
+		<br />
+
+		<h:outputLabel value="Nome: " />
+		<h:outputText value="#{usuarioMB.nome}" />
+		<br />
+
+		<h:outputLabel value="CPF: " />
+		<h:outputText value="#{usuarioMB.cpf}" />
+		<br />
+
+		<h:outputLabel value="Senha: " />
+		<h:outputText value="#{usuarioMB.senha}" />
+		<br />
+
+	</h:form>
+
+</h:body>
+</html>
